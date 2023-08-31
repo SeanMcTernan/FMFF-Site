@@ -114,8 +114,7 @@ export const headerData = {
       text: 'Widgets',
       href: '#',
     },
-  ],
-  actions: [{ type: 'button', text: 'Download', href: 'https://github.com/onwidget/astrowind' }],
+  ]
 };
 
 export const footerData = {

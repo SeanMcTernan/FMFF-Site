@@ -14,11 +14,6 @@ interface Link {
   icon?: string;
 }
 
-interface ActionLink extends Link {
-  class?: string;
-  type?: string;
-}
-
 interface MenuLink extends Link {
   links?: Array<MenuLink>;
 }
@@ -26,7 +21,6 @@ interface MenuLink extends Link {
 export interface Props {
   id?: string;
   links?: Array<MenuLink>;
-  actions?: Array<ActionLink>;
   isSticky?: boolean;
   isDark?: boolean;
   isFullWidth?: boolean;
@@ -37,7 +31,6 @@ export interface Props {
 const {
   id = 'header',
   links = [],
-  actions = [],
   isSticky = false,
   isDark = false,
   isFullWidth = false,
